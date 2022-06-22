@@ -299,3 +299,93 @@ html{
     color: #656565;
 }
 /* Footer and */
+/* modal tickets */
+.modal-tickets{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.ticket-container{
+    position: relative;
+    width: 900px;
+    background-color: #fff;
+}
+
+.ticket-header{
+    height: 130px;
+    background-color: #009688;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: #fff;
+}
+.ticket-header i{
+    margin: 0 20px;
+}
+.ticket-icon-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 30px;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.ticket-body,
+.ticket-footer{
+    padding: 20px 16px;
+}
+.ticket-body-label{
+    display: block;
+    margin-bottom: 20px;
+}
+.ticket-body input{
+    margin-bottom: 20px;
+    padding: 10px 6px;
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border: 1px solid #cccc;
+    border-radius: 4px;
+}
+.ticket-body input:focus{
+    border: 1px solid #000;
+}
+.tickets-btn button{
+    width: 100%;
+    background-color: #009688;
+    padding: 16px 0;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+.tickets-btn button:hover,
+.ticket-close button:hover{
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+.ticket-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ticket-close button{
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background-color: #f44336;
+    color: #fff;
+    font-size: 16px;
+}
