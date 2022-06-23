@@ -306,15 +306,18 @@ html{
     right: 0;
     left: 0;
     bottom: 0;
-    display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgba(0,0,0,0.3);
+    display: none;
+    animation: modalFadeIn ease 0.3s;
 }
 
 .ticket-container{
     position: relative;
     width: 900px;
+    max-width: calc(100%-32px);
+    min-height: 200px;
     background-color: #fff;
 }
 
@@ -388,4 +391,17 @@ html{
     background-color: #f44336;
     color: #fff;
     font-size: 16px;
+}
+.modal-tickets.open{
+    display: flex;
+}
+@keyframes modalFadeIn{
+    from{
+        transform: translateY(-140px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
